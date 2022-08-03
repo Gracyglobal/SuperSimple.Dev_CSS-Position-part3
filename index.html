@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cssPosition, part3</title>
+  
+  <style>
+    .header{
+      background: rgb(237,237,237);
+      height: 180px;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+    }
+    
+    .lady{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 15px;
+      
+    }
+    
+    .pretty{
+      width: 127px;
+      height: 127px;
+      object-fit: cover;
+      border-radius: 50%;
+      object-position: top;
+      margin-top: 20px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    
+    .name{
+      font-size: 43px;
+      font-family: roboto;
+      font-weight: bold;
+      margin-right: 30px;
+      margin-top: 13px;
+      
+    }
+    
+    .buttons{
+      margin-right: 15px;
+      margin-left: 100px;
+    }
+    
+    .friend{
+      background-color: rgb(10, 102, 194);
+      color: white;
+      border: none;
+      height: 75px;
+      width: 201px;
+      
+      margin-right: 12px;
+      margin-top: 50px;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center; 
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .message{
+      background-color: rgb(218,218,218);
+      color: black;
+      border: none;
+      height: 75px;
+      width: 201px;
+      margin-right: 0px;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center; 
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .woman{
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
+    }
+    
+    .ladies{
+       width: 127px;
+      height: 127px;
+      object-fit: cover;
+      border-radius: 50%;
+      object-position: top;
+      margin-top: 25px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    
+    .second-black{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 40px;
+      margin-right: 50px;
+    }
+    
+    .details{
+      
+    }
+   
+    .info{
+      font-size: 42px;
+      font-family: Arial;
+      font-weight: 500;
+    }
+    
+    .sub-info{
+      color: rgb(126,126,126);
+      font-family: roboto;
+      font-size: 46px;
+    }
+    
+    .plus{
+      color: rgb(126,126,126);
+      font-family: roboto;
+      font-size: 65px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body style="padding-bottom: 2000px;">
+  
+  <!-- 14e exercise -->
+  <div class="header">
+    <div class="lady">
+      <img class="pretty" src="pretty.jpg" alt="">
+      
+      <div class="name">
+     <p class="elena">Elena Robert</p>
+      </div>
+      
+       <div class="buttons">
+     <button class="friend">Add friend</button>
+     <button class="message">Message</button>
+    </div>
+    </div>   
+  </div>
+  14e exercise
+  
+  <!-- 14f exercise -->
+  <div style="
+  background: rgb(27,27,27);
+  color: white;
+  font-size: 45px;
+  font-family: Georgia;
+  position: fixed; 
+  right: 800px;
+  left: 0px; 
+  top: 400px;
+  bottom: 400px;
+  "><div class="woman"> 
+    <img class="ladies"  src="pretty.jpg" alt="">
+  <img class="ladies"
+  src="maroon.jpg" alt=""> 
+  <img class="ladies"
+  src="blue.jpg" alt="">
+  </div></div>
+ 
+    <div style="
+  background: rgb(54,54,54);
+  color: white;
+  font-size: 45px;
+  font-family: Georgia;
+  position: fixed; 
+  right: 40px;
+  left: 180px; 
+  top: 400px;
+  bottom: 400px;
+  width: 450px;">
+ <div class="second-black">
+   <div class="details">
+  <p class="info"><span>INFO</span></p>
+    
+    <span class="sub-info">
+      <p># new-videos</p>
+      <p># updates</p>
+      <p># faq</p>
+    </span>
+  </div>
+  
+   <p class="plus">&plus;</p>
+ </div>
+  </div>
+</body>
+</html>
